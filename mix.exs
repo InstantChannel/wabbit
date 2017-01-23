@@ -19,7 +19,7 @@ defmodule Wabbit.Mixfile do
   defp deps do
     [{:gen_stage, "~> 0.10"},
      {:connection, "~> 1.0"},
-     {:amqp_client, [env: :prod, git: "https://github.com/InstantChannel/amqp_client.git"]},
-     {:rabbit_common, github: "jbrisbin/rabbit_common", override: true}]
+     {:rabbit_common, git: "https://github.com/InstantChannel/rabbit_common.git", override: true, branch: "master"},
+     {:amqp_client, [env: :prod, git: "https://github.com/InstantChannel/amqp_client.git"]}]
   end
 end
